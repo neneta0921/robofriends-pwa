@@ -39,8 +39,10 @@ class App extends Component {
     })
     return (
       <div className='tc'>
-        <h1 className='f1'>RoboFriends</h1>
-        <SearchBox searchChange={onSearchChange}/>
+        <div className='header'>
+          <h1 className='f1 ttu'>Neko Friends</h1>
+          <SearchBox searchChange={onSearchChange}/>
+        </div>
         <Scroll>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
