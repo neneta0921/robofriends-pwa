@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { setSearchField, requestRobots } from '../actions';
 
 import CardList from '../components/CardList';
+import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
@@ -38,9 +39,9 @@ class App extends Component {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
     return (
-      <div className='tc'>
-        <div className='header'>
-          <h1 className='f1 ttu'>Neko Friends</h1>
+      <Fragment>
+        <div className='tc'>
+          <Header className='header' />
           <SearchBox searchChange={onSearchChange}/>
         </div>
         <Scroll>
@@ -50,7 +51,7 @@ class App extends Component {
             </ErrorBoundry>
           }
         </Scroll>
-      </div>
+      </Fragment>
     );
   }
 }
