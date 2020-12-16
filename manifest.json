@@ -1,6 +1,12 @@
 {
   "short_name": "Neko App",
   "name": "React Neko App",
+  "prefer_related_applications": true,
+  "start_url": "./index.html",
+  "display": "standalone",
+  "related_applications": [
+    {}
+  ],
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,19 +14,17 @@
       "type": "image/x-icon"
     },
     {
-      "src": "android-chrome-192x192.ico",
+      "src": "android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "android-chrome-512x512.ico",
+      "src": "android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
