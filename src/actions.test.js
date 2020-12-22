@@ -22,7 +22,7 @@ it('should create an action to search robots', () => {
   const text = 'wooo';
   const expectedAction = {
       type: CHANGE_SEARCH_FIELD,
-      payload: text
+              payload: text
   }
   expect(actions.setSearchField(text)).toEqual(expectedAction)
 })
